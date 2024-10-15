@@ -1,0 +1,118 @@
+body {
+   font-family: 'Roboto', sans-serif;
+   background: linear-gradient(135deg, #f0f0f0 0%, #e0eafc 50%, #c2e9fb 100%);
+   color: #333; 
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #333;
+  margin: 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background: linear-gradient(45deg, #ff7e5f 0%, #feb47b 100%); 
+  -webkit-background-clip: text;  
+  -moz-background-clip: text;     
+  -o-background-clip: text;       
+  background-clip: text;          
+  -webkit-text-fill-color: transparent; 
+}
+
+h1::after {
+  content: '';
+  display: block;
+  width: 250px;
+  height: 4px;
+  background: linear-gradient(45deg, #ff7e5f 0%, #feb47b 100%); 
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+.out-of-stock {
+  color: #ff7e5f !important;
+  font-weight: bold;
+}
+
+.TShirtStorefront {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 30px;
+  padding: 20px;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 100%);
+
+}
+
+.Shirt {
+  background: linear-gradient(45deg, rgba(214, 214, 214, 0) 0%, rgba(214, 214, 214, 0.5) 100%);
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 28px;
+  margin-top: 30px;
+  text-align: center;
+  width: 230px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Shirt:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; 
+  max-height: 200px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.Shirt h2 {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.Shirt p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.buy-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.quantity-select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 60px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #ff7e5f 0%, #feb47b 100%); 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #feb47b 0%, #ff7e5f 100%); 
+  transform: scale(1.05); 
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
